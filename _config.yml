@@ -1,14 +1,36 @@
-# Site settings
-title: kevinzm
-email: zmkevin@aliyun.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/kevinzm-blog" # the subpath of your site, e.g. /blog/
-url: "http://kevinzm.github.io" # the base hostname & protocol for your site
-twitter_username: kevinzm
-github_username:  kevinzm
+# ----
+# Site
 
-# Build settings
-markdown: kramdown
+title: KevinZM'Blog
+description: KevinZM'Blog,.
+url: https://kevinzm.github.io
+google_analytics_key:
+permalink: pretty
+
+collections:
+  documentation:
+    title: Documentation
+    position: 1
+  api:
+    title: APIs
+    position: 2
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+types:
+  - get
+  - put
+  - delete
+  - post
