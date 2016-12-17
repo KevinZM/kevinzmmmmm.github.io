@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-gem 'jekyll', '3.3.1'
-
-group :jekyll_plugins do
-  gem 'jekyll-seo-tag', '2.1.0'
-	gem 'jekyll-sitemap', '0.12.0'
+group :development do
+  gem 'rake', '~> 10.4.2'
+  gem 'sass', '~> 3.4.10'
+  gem 'jekyll', '~> 2.5.3'
 end

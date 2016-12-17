@@ -1,57 +1,60 @@
-# Aviator
+# mug
 
-API documentation template for Jekyll. Browse through a [live demo](https://tangerine-lemon.cloudvent.net/).
-Start documenting your API with this configurable theme.
+Jekyll theme
 
-![Aviator template screenshot](images/_screenshot.png)
+> :warning:
+  This theme requires ruby and rubygems installed
 
-Aviator was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
+* [x] Clean layout
+* [x] Resposive layout
+* [x] Preprocessor SASS
+* [x] CSS minified
+* [x] Search posts
+* [x] Pagination
+* [x] Syntax highlight
+* [x] Author config
+* [x] Share posts
+* [x] Comments with Disqus
 
-Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
+---
 
-## Features
+### Start in 4 steps
 
-* Three column layout
-* Fully responsive
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* SEO tags
-* Google Analytics
+1. Download or clone repo `git clone git@github.com:nandomoreirame/mug.git`
+2. Enter the folder: `cd mug/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
 
-## Setup
+Access, [localhost:4000/mug](http://localhost:4000/mug)
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+### Deploy in Github pages in 2 steps
 
-## Develop
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
+2. Run `rake` or `rake publish` for build and publish on Github
 
-Aviator was built with [Jekyll](http://jekyllrb.com/) version 3.1.6, but should support newer versions as well.
+---
 
-Install the dependencies with [Bundler](http://bundler.io/):
+### Using Rake tasks
 
-~~~bash
-$ bundle install
-~~~
+* Create a new page: `rake page name="contact.md"`
+* Create a new post: `rake post title="TITLE OF THE POST"`
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+---
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+### Demo and Download
 
-## Editing
+[Demo](https://nandomoreira.me/mug/)
+[Download](https://github.com/nandomoreirame/mug/archive/master.zip)
 
-Aviator is already optimised for adding, updating and removing documentation pages in CloudCannon.
+![mug - free Jekyll theme](/screenshot.png)
 
-### Usage
+---
 
-* Each section is a different collection, this helps organise your content.
-* Set the order of the collections with the position field in collection configuration in `_config.yml`.
-* Set the order of the documents inside a collection by setting the position in front matter.
+### Copyright and license
 
-### Search
+It is under [the MIT license](/LICENSE).
 
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+> :warning:
+  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `_layouts/default.html`
+
+Enjoy :yum:

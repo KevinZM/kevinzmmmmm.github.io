@@ -1,36 +1,39 @@
-# ----
-# Site
+# coding:utf-8
+permalink   : /:categories/:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
+paginate: 2 #6
+comments: true
+paginate_path: "/page/:num"
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
+
+cover: /assets/images/default-cover.png
+
+# site title, description, meta_description, meta_keywords
+# Details for the RSS feed generator
+name: KevinZM
 title: KevinZM'Blog
-description: KevinZM'Blog,.
-url: https://kevinzm.github.io
-google_analytics_key:
-permalink: pretty
+description: "千里之行，始于足下"
+keywords: "blog, web, kevin, zm"
+url: http://kevinzm.github.io
+baseurl: "/mug"
+domain_name: nandomoreira.me
+# google_analytics: UA-52446115-1
+#repo: http://github.com/nandomoreirame/mug
+disqus_shortname: "nandothemes"
 
-collections:
-  documentation:
-    title: Documentation
-    position: 1
-  api:
-    title: APIs
-    position: 2
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+author:
+  name      : kevinzm
+  image     : /assets/images/author.jpg
+  email     : zmkevin@aliyun.com
+  url       : http://kevinzm.github.com
+  github    : http://kevinzm.github.com
+  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
 
-exclude:
-  - readme.md
-  - LICENCE
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: default
-
-types:
-  - get
-  - put
-  - delete
-  - post
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
