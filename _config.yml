@@ -1,39 +1,23 @@
-# coding:utf-8
-permalink   : /:categories/:year/:title/
-markdown    : kramdown
-highlighter : pygments
+# Site settings
 
-paginate: 2 #6
-comments: true
-paginate_path: "/page/:num"
+title: KevinZM # Title of your site
+email: zmkevin@aliyun.com # Your contant email
 
-source: source
-destination: _site
-sass:
-  sass_dir: _scss
-  style: compressed
+description: > # this means to ignore newlines until "baseurl:"
+  千里之行，始于足下
+baseurl: "https://kevinzm.github.io" # the subpath of your site, e.g. /blog/
+url: "https://kevinzm.github.io" # the base hostname & protocol for your site
 
-cover: /assets/images/default-cover.png
+# Social links.
+# Replace the word 'example' with your username if you want to include the icon in the left sidebar
+# Delete the word 'example' if you don't want to include the icon in the left sidebar
 
-# site title, description, meta_description, meta_keywords
-# Details for the RSS feed generator
-name: KevinZM
-title: KevinZM'Blog
-description: "千里之行，始于足下"
-keywords: "blog, web, kevin, zm"
-url: http://kevinzm.github.io
-baseurl: "/mug"
-domain_name: nandomoreira.me
-# google_analytics: UA-52446115-1
-#repo: http://github.com/nandomoreirame/mug
-disqus_shortname: "nandothemes"
+#twitter_username:     example  # Replace this with your Twitter username
+github_username:      KevinZM  # Replace this with your GitHub username
+#linkedin_username:    example  # Replace this with your LinkedIn username
+#google_plus_username: example  # Replace this with your Google+ username
+#facebook_username:    example  # Replace this with your Facebook username
+#dribbble_username:    example  # Replace this with your Dribbble username
 
-author:
-  name      : kevinzm
-  image     : /assets/images/author.jpg
-  email     : zmkevin@aliyun.com
-  url       : http://kevinzm.github.com
-  github    : http://kevinzm.github.com
-  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+# Build settings
+markdown: kramdown
