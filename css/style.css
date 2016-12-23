@@ -10,8 +10,8 @@
 /* Basic */
 
 	body {
-		/*#fff*/
-		background: #d7fff0;
+
+		background: #F0FFFF;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -28,8 +28,7 @@
 		}
 
 	body, input, select, textarea {
-		/* #a2a2a2*/
-		color: #191970;
+		color: #a2a2a2;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
