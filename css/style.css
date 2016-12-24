@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Basic */
 
@@ -947,7 +942,7 @@
 		left: 0;
 		padding: 8em 4em 0 0;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
