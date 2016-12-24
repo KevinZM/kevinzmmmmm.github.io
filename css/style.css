@@ -949,7 +949,7 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 30%;
+		width: 35%;
 	}
 
 		#header strong, #header b {
@@ -980,7 +980,7 @@
 		padding: 0 4em 6em 0;
 		position: fixed;
 		text-align: right;
-		width: 30%;
+		width: 35%;
 	}
 
 		#footer .icons {
@@ -1020,10 +1020,10 @@
 /* Main */
 
 	#main {
-		margin-left: 30%;
+		margin-left: 35%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
-		width: calc(100% - 30%);
+		width: calc(100% - 35%);
 	}
 
 		#main > section {
